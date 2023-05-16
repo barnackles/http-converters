@@ -11,5 +11,9 @@ public class ConverterConfiguration {
     public HttpMessageConverter<Object> customSlashConverter() {
         return new MyCustomSlashConverter();
     }
+    @Bean
+    public HttpMessageConverter<Object> customSemicolonConverter() {
+        return new MyCustomSemicolonConverter();
+    }
 
 }
